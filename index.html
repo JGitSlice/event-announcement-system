@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Event Announcement System</title>
+	    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+	    <header>
+		<h1>📢 Event Announcement System</h1>
+		<p>Stay Updated with Upcoming Events</p>
+	    </header>
+
+	    <div class="container">
+
+		<section class="card events-card">
+		    <h2>Upcoming Events</h2>
+
+		    <div id="eventsContainer">
+		        <div class="event">
+		            <h3>AWS Cloud Workshop</h3>
+		            <p class="event-date">June 15, 2026</p>
+		            <p>Hands-on workshop on AWS services and cloud deployment.</p>
+		        </div>
+
+		        <div class="event">
+		            <h3>Hackathon 2026</h3>
+		            <p class="event-date">July 1, 2026</p>
+		            <p>24-hour coding competition for students and developers.</p>
+		        </div>
+
+		        <div class="event">
+		            <h3>DevOps Bootcamp</h3>
+		            <p class="event-date">July 20, 2026</p>
+		            <p>Learn CI/CD, Docker, Terraform, and AWS DevOps tools.</p>
+		        </div>
+		    </div>
+		</section>
+
+		<div class="right-section">
+
+		    <section class="card">
+		        <h2>Subscribe for Notifications</h2>
+
+		        <form id="subscribeForm">
+		            <input type="email" id="email" placeholder="Enter your email" required>
+		            <button type="submit">Subscribe</button>
+		        </form>
+
+		        <p id="subscribeMessage"></p>
+		    </section>
+
+		    <section class="card">
+		        <h2>Create an Event</h2>
+
+		        <form id="eventForm">
+		            <input type="text" id="eventTitle" placeholder="Event Title" required>
+		            <input type="date" id="eventDate" required>
+		            <textarea id="eventDescription" placeholder="Event Description" required></textarea>
+		            <button type="submit">Create Event</button>
+		        </form>
+
+		        <p id="eventMessage"></p>
+		    </section>
+
+		</div>
+
+	    </div>
+
+	</body>
+</html>
