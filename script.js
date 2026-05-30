@@ -37,7 +37,7 @@ subscribeForm.addEventListener("submit", async (e) => {
     try{
 
         await fetch(
-            "YOUR_API_GATEWAY_URL/subscribe",
+            "https://560f2burba.execute-api.ap-south-1.amazonaws.com/subscribe",
             {
                 method:"POST",
                 headers:{
@@ -81,7 +81,7 @@ eventForm.addEventListener("submit", async (e) => {
     try{
 
         await fetch(
-            "YOUR_API_GATEWAY_URL/create-event",
+            "https://560f2burba.execute-api.ap-south-1.amazonaws.com/create-event",
             {
                 method:"POST",
                 headers:{
